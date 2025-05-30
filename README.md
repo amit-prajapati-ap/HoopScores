@@ -70,7 +70,7 @@ Node.js
 
 Express.js
 
-Third-Party API : [https://www.api-basketball.com](https://api-sports.io/documentation/basketball/v1)
+Third-Party API : [API-Sports](https://api-sports.io/documentation/basketball/v1)
 
 ## 🤝 Contributing
 Contributions are welcome! If you'd like to contribute:
