@@ -86,7 +86,7 @@ const MatchCard = () => {
         if (!matchesdata || matchesdata.length === 0) {
           setDataFound(false);
         }
-      }, 8000);
+      }, 15000);
   
       return () => clearTimeout(timer); // Clean up the timer on unmount
     }, [matchesdata]);
