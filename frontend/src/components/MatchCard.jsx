@@ -14,7 +14,7 @@ const MatchCard = () => {
     try {
       const backendUrl = import.meta.env.VITE_HOOPSCORES_BACKEND_URL
       const { data } = await axios.get(backendUrl + "/api/v1/games");
-      console.log(data)
+      console.log("Done")
       if (data.statusCode == 200) {
         toast.success(data.message);
         const actualMatches = data.data
