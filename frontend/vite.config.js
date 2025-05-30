@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   server: {
     proxy: {
-      '/api/v1': 'https://hoop-scores-backend.vercel.app'
+      '/api/v1': 'http://localhost:5000'
     }
   }
 })
