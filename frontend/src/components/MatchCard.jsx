@@ -9,12 +9,12 @@ const MatchCard = () => {
   const [matchesdata, setMatchesdata] = useState(null);
   const [season, setSeason] = useState("");
   const [dataFound, setDataFound] = useState(true)
-  const [currentPage, setCurrentPage] = useState(0)
 
   const fetchMatches = async () => {
     try {
       const { data } = await axios.get("/api/v1/");
-      if (data.statusCode == 200) {
+      console.log("Done")
+      if (data.statusCode == 200) {        
         toast.success(data.message);
         const actualMatches = data.data
         console.log(actualMatches)
