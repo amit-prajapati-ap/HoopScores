@@ -12,12 +12,10 @@ const MatchCard = () => {
 
   const fetchMatches = async () => {
     try {
-      const { data } = await axios.get("/api/v1/");
-      console.log("Done")
-      if (data.statusCode == 200) {        
+      const { data } = await axios.get("/api/v1/games");
+      if (data.statusCode == 200) {
         toast.success(data.message);
         const actualMatches = data.data
-        console.log(actualMatches)
         setMatchesdata([...actualMatches].reverse());
         setSeason("2022-23");
       } else {
