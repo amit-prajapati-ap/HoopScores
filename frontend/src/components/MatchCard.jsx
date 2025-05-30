@@ -13,6 +13,7 @@ const MatchCard = () => {
   const fetchMatches = async () => {
     try {
       const { data } = await axios.get("/api/v1/games");
+      console.log(data)
       if (data.statusCode == 200) {
         toast.success(data.message);
         const actualMatches = data.data
